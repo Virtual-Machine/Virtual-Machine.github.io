@@ -1,0 +1,49 @@
+/* Elements */
+
+body {
+	background-color: #333;
+	padding: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Verdana
+}
+
+p {
+	font-family: serif;
+	color: #bbb;
+}
+
+/* Ids */
+
+#site_header {
+	color: #5A7BCC;
+	text-align: center;
+}
+
+#site_header>p {
+	padding: 20px;
+}
+
+/* Classes */
+
+.logo {
+	background-color: #ddd;
+	position: absolute;
+	right: 7px;
+	border-radius: 2em;
+	border: 3px solid #fff;
+	padding: 7px;
+}
+
+.logo>img {
+	width: 7em;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 550px){
+	#site_header {
+		padding-top: 200px;
+	}
+}
