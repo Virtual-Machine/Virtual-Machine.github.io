@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
 	font-family: serif;
 	color: #bbb;
+	font-size: 1.5em;
 }
 
 /* Ids */
@@ -19,6 +20,10 @@ p {
 #site_header {
 	color: #5A7BCC;
 	text-align: center;
+}
+
+#site_header>h2 {
+	font-size: 4em;
 }
 
 #site_header>p {
@@ -38,12 +43,56 @@ p {
 
 .logo>img {
 	width: 7em;
+	margin: 0 auto;
+}
+
+.main_body {
+	background-color: #555;
+	padding: 15px;
+	margin: 30px 20px 30px 200px;
+	border-radius: 5px;
+	height: 600px;
+	text-align: center;
+	color: #aaa;
+	font-family: verdana;
+}
+
+.menu_bar {
+	position: absolute;
+	left: 0px;
+	top: 200px;
+	color: #aaa;
+}
+
+.menu_bar>ul {
+	list-style: none;
+	background-color: black;
+	padding: 2em;
+	border-radius: 0px 50px 50px 0px;
+}
+
+.menu_bar>ul>li {
+	cursor: pointer;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	font-size: 1.5em;
+}
+
+.menu_bar>ul>li:hover {
+	color: #5A7BCC;
 }
 
 /* Media Queries */
 
-@media only screen and (max-width: 550px){
-	#site_header {
-		padding-top: 200px;
+@media only screen and (max-width: 900px){
+	.logo {
+		position: static;
+		padding: 7px;
+		width: 118px;
+		margin: 0 auto;
+	}
+	.menu_bar {
+		position: static;
+
 	}
 }
