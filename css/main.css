@@ -3,6 +3,9 @@
 body {
 	background-color: #333;
 	padding: 10px;
+	opacity: 70%;
+	background-image: url('../images/chipb copy.jpg');
+	background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6 {
