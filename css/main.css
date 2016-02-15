@@ -48,6 +48,11 @@ p {
 	padding: 7px;
 }
 
+.border_green {
+	color: red;
+	border: 2px solid green;
+}
+
 .logo>img {
 	width: 7em;
 	margin: 0 auto;
