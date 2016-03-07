@@ -1,10 +1,20 @@
 var messages = [];
+var users = [];
 var messageCount = 0;
 
 var name = prompt("What is your name?");
 if(!name){
 	name = "Anon";
 }
+
+$.ajax({url:'https://polar-mesa-45755.herokuapp.com/api/users',
+		type: 'GET',
+		crossDomain: true,
+		success: function(result){
+			users = result;
+			console.log(users);
+		}
+	})
 
 document.getElementById('submit_text').focus();
 
