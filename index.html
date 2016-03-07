@@ -7,33 +7,29 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
     </head>
-    <body class='border_green'>
+    <body>
         <div class="logo">
             <img src="https://www.tech-asteroid.com/logo-background-new.png">    
         </div>
         <div id='site_header'>
             <h2>Virtual-Machine</h2>
-            <p>This is a test site for Virtual-Machine!</p>    
+            <p>Mad Chatter</p>    
         </div>
 
-        
+        <div class="users">
+            <p class='green'>Active</p>
+            <p id="curUser"></p>
+        </div>
+
         <div class="main_body">
-            <p>Main Body View<p>
-            <div class="content_window">
-                <p>Content<p>
-                <p id='content-text'> [Test] </p>
+            <div id="content_window">
             </div>
         </div>
 
-        <div class="menu_bar"> 
-            <ul>
-                <li onclick='showItem(1)'>Item 1</li>
-                <li onclick='showItem(2)'>Item 2</li>
-                <li onclick='showItem(3)'>Item 3</li>
-                <li onclick='showItem(4)'>Item 4</li>
-                <li onclick='showItem(5)'>Item 5</li>
-            </ul>
+        <div id="sticky_submission_bar">
+            <input id="submit_text" type="text"><div id="submit_button">Send</div>
         </div>
+
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
         <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

@@ -2,7 +2,6 @@
 
 body {
 	background-color: #333;
-	padding: 10px;
 	opacity: 70%;
 	background-image: url('../images/chipb copy.jpg');
 	background-size: cover;
@@ -48,62 +47,83 @@ p {
 	padding: 7px;
 }
 
-.border_green {
-	color: red;
-	border: 2px solid green;
-}
-
 .logo>img {
 	width: 7em;
 	margin: 0 auto;
 }
 
 .main_body {
-	background: radial-gradient( #274046, #333);
+	background-color: #333;
 	padding: 15px;
 	margin: 30px 20px 30px 130px;
 	border-radius: 5px;
-	height: 600px;
-	text-align: center;
+	height: 400px;
 	color: #aaa;
 	font-family: verdana;
 }
 
-.menu_bar {
-	position: absolute;
-	left: 0px;
-	top: 200px;
-	color: #aaa;
-}
-
-.menu_bar>ul {
-	list-style: none;
-	background-color: black;
-	padding: 2em;
-	border-radius: 0px 50px 50px 0px;
-}
-
-.menu_bar>ul>li {
-	cursor: pointer;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	font-size: 1.5em;
-}
-
-.menu_bar>ul>li:hover {
-	color: #5A7BCC;
-}
-
-.content_window {
+#content_window {
 	background-color: #222;
-	height: 500px;
+	height: 370px;
 	border-radius: 20px;
 	vertical-align: middle;
 	max-width: 1000px;
 	margin: 0 auto;
-	background: radial-gradient(#333 , #274046);
-	        
+	background-color: #274046;
+	padding: 20px;
+	overflow-y: scroll; 
+}
 
+.users {
+	width: 110px;
+	background-color: #111;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding: 10px;
+	float: left; 
+}
+
+.green {
+	color: #293;
+	font-size: 14px;
+	text-decoration: underline;
+}
+
+#sticky_submission_bar {
+	position: fixed;
+	bottom: 0px;
+	background-color: #222;
+	height: 70px;
+	padding: 20px;
+	width: 100%;
+	border-top: 1px solid #555;
+}
+
+#submit_text {
+	float: left;
+	width: 93%;
+	font-family: menlo;
+    font-size: 18px;
+}
+
+#submit_button {
+	float: right;
+	width: 55px;
+	background-color: #293;
+	padding: 10px;
+	margin-top: -5px;
+	border: 1px solid #444;
+	color: #ddd;
+    font-family: menlo;
+    cursor: pointer;
+}
+
+.message {
+	font-size: 18px;
+}
+
+.message:first-child {
+	color: #6A9FCC;
 }
 
 /* Media Queries */
@@ -115,34 +135,22 @@ p {
 		width: 118px;
 		margin: 0 auto;
 	}
-	.menu_bar {
-		position: fixed;
-		top: auto;
-		left: 50%;
-		width: 340px;
-		transform: translateX(-50%);
-		bottom: -10px;
-		margin: 0 auto;
-	}
-	
-	.menu_bar>ul {
-		
-		border-radius: 50px 50px 0px 0px;
-	}
-
-	.menu_bar>ul li {
-		display: inline;
-		font-size: 0.9em;
-		padding: 5px 8px 5px 8px;
-	}
 
 	.main_body {
 		margin-left: 20px;
+	}
+
+	#submit_text {
+		width: 90%;
 	}
 }
 
 @media only screen and (max-width: 600px){
 	#site_header {
 		width: 100%;
+	}
+
+	#submit_text {
+		width: 83%;
 	}
 }
