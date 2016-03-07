@@ -104,6 +104,9 @@ p {
 	width: 93%;
 	font-family: menlo;
     font-size: 18px;
+    background-color: #333;
+    color: #ddd;
+    border: 2px solid #555;
 }
 
 #submit_button {
