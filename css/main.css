@@ -129,6 +129,28 @@ p {
 	color: #6A9FCC;
 }
 
+.button {
+	padding: 5px;
+	border: 1px solid #666;
+	background-color: #333;
+	color: #a22;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.button:hover {
+	color: red;
+}
+
+#reset {
+	color: #2a9;
+}
+
+#reset:hover {
+	color: green;
+}
+
 /* Media Queries */
 
 @media only screen and (max-width: 900px){
