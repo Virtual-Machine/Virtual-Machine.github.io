@@ -36,10 +36,12 @@ function addZero(i) {
 }
 
 function submitMessage(){
+	var timestamp = new Date();
+	timestamp = timestamp.toDateString() + " - " + timestamp.toTimeString() + " -- ";
 	$.ajax({url:'https://polar-mesa-45755.herokuapp.com/api/messages',
 			type: 'POST',
 			data: {
-				message: name + " ~> " + document.getElementById('submit_text').value
+				message: timestamp + name + " ~> " + document.getElementById('submit_text').value
 			},
 			crossDomain: true,
 			success: function(){
