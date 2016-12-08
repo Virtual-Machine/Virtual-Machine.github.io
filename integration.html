@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tech-Asteroid Blog</title>
+	<link rel="stylesheet" href="/css/blog.css">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
+</head>
+<body>
+	<header>
+		<img src="/images/logo-background-new.png" alt="" class="logo">
+		<span id="companyName">Blog</span>
+		<span class="headerUl">
+			<ul class="headerList">
+				<a href="/index.html"><li>Home</li></a>
+			</ul>
+		</span>
+	</header>
+	<div class="container">
+		<div id="blogContent">
+			<a href="./blog_posts.html">Back To Posts</a>
+			<div class="detailPost"><h2>Integration (System) Testing vs Unit Testing</h2><p>Thursday, September 15th, 2016</p><p>The utility of integration (system) tests cannot be overstated for stabilizing an API and ensuring reliable functionality. My experience with unit tests have shown them to be brittle, susceptible to coupling, and often the source of frustrating refactoring and debugging experiences. The modern age of computing has all but eliminated the costs of running thorough integration tests on the core API of your code. Using parallelization with modern hardware and or cloud resources, it is possible to continuously run system tests that achieve high levels of coverage across your API in real-life data scenarios. This data can often be much more informative as it suggests how the entire code of the system works together rather than out of context.</p><p>Unit tests can be effective to help catch unexpected behavior at the programming language semantics level. However this utility comes at the expense of requiring a great deal of testing code to achieve moderate coverage. This defies a tenet for writing quality software, 'to always minimize the amount of code it takes to achieve anything'. The more testing code you have, the longer it will take to run, the more likely test code will itself contain bugs, the harder it is to scan test code and testing results, the more susceptible it is to deprecation, and all the more likely to become broken during API changes or refactoring.</p><p>Integration tests can offer all the benefits of unit tests without the clunky overhead of large test code bases. If you are following good design principles, your API should only offer a simple but powerful public API that hides a private interface that carries out the gritty details. If you run your integration tests only against your public API, you can ensure the end to end functionality your clients care about is being achieved without bogging your test code with private API details. If a private interface function is misbehaving, it should be detected by thorough integration tests that depend on the underlying utility of this function. This testing approach will also allow you to freely change your private API without rendering your testing code out of date. Furthermore, if you are required to change an integration test as a result of a refactoring or name change, this is a strong indicator that your public API has changed and you should release your code under a new major version number.</p><p>In the past, programmers did not have the resources to continuously run integration tests. Computer resources were scarce, and the time required to run full system testing was exorbitant. This lead to a deeply entrenched belief that integration tests were too costly to be depended on to quickly find bugs. Programmers naturally gravitated to the tool that allowed them to write small 'Units' of code and run them frequently to quickly catch code regressions and bugs. Times however have changed, computer access has never been better, the machines that we find in our laps and our pockets rival the large servers of decades past, and the Internet has provided us with a cloud infrastructure that allows unheard of levels of remote parallelization. Clever programmers should have no issue running the entire integration test suite after every commit on all but the most immense of code bases. Automating this into the commit process via a Travis build is a common practice on Github. Catching regressions before uploading to the master server makes this a very useful setup.</p><p>Programmers will naturally be best suited to pick the tools and practices that offer them the largest advantages and minimal disadvantages in each environment. Where possible, I think programmers would be best served to keep their tests very high level, directly targeting the public API and only concern itself with the final API results. This will afford the programmer great flexibility in their private module implementations. This also avoids a typical problem of unit testing, in that unit testing often only tests the basic functionality of the programming language itself rather than how your programming logic works in tandem. If a programmer wants to be efficient, they need to take certain functionality for granted, and leave the testing of programming language details to the language maintainers. </p></div>
+			<a href="./blog_posts.html">Back To Posts</a>
+		</div>
+		<div id="disqus_thread"></div>
+		<script>
+		(function() {
+		var d = document, s = d.createElement('script');
+		s.src = '//virtual-machine.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view comments</noscript>	
+	</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tech-Asteroid Blog</title>
+	<link rel="stylesheet" href="/css/blog.css">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=yes">
+</head>
+<body>
+	<header>
+		<img src="/images/logo-background-new.png" alt="" class="logo">
+		<span id="companyName">Blog</span>
+		<span class="headerUl">
+			<ul class="headerList">
+				<a href="/index.html"><li>Home</li></a>
+			</ul>
+		</span>
+	</header>
+	<div class="container">
+		<div id="blogContent">
+			<a href="./blog_posts.html">Back To Posts</a>
+			<div class="detailPost"><h2>ES6</h2><p>Wednesday, March 9th, 2016</p><p>A very important milestone was reached yesterday with the release of Firefox 45. Firefox 45 now natively supports ES6 class syntax, and the current big three of browsers (Firefox, Chrome, and Edge) now support all the major ES6 conventions natively. <a href="https://kangax.github.io/compat-table/es6/">ES6 Compatibility Table</a></p><p>The class syntax was the final holdout among the major ES6 proposals due to the missing support in Firefox. It now joins promises, generators, arrow functions, template literals, const, let, the spread operator and symbols as being natively supported by Firefox 45, Chrome 49, and Edge 12. This is an exciting time for developers that enjoy the power of javascript but are not entirely keen on the syntax that ES5 offered. ES6 allows clean Ruby-like syntax improvements while retaining the core functionality and syntax of ES5 that is so widely used.</p><p>In my opinion, the greatest positive of this native support beyond the implicitly improved performance is the reduced need for compilers, polyfills, libraries, frameworks, and plugins. Developers can now collectively use the new standard library functionality rather than the glut of APIs and unite on one standard API for generic problem solving. The pipelines can now get a little bit shorter, the build systems can remove a layer of abstraction and our applications will become easier to extend.</p><p>Despite it being just syntactic sugar on top of javascript's prototype inheritance model, the ES6 class syntax instantly makes the language more accessible to the legions of programmers familiar with an object-oriented approach. Programming is often more about reading and comprehending than writing and problem solving. In this light, one can begin to see why syntactic sugar can be so valuable even if it induces some overall performance loss to the runtime. Hardware keeps getting faster, but the human mind is constrained on how readily it can understand computer instructions, track down bugs, and implement new functionality. The ES6 class syntax allows the developer to more cleanly encapsulate program functionality, improving developer productivity, and this is the big win of syntactic improvements.</p></div>
+			<a href="./blog_posts.html">Back To Posts</a>
+		</div>
+		<div id="disqus_thread"></div>
+		<script>
+		(function() {
+		var d = document, s = d.createElement('script');
+		s.src = '//virtual-machine.disqus.com/embed.js';
+		s.setAttribute('data-timestamp', +new Date());
+		(d.head || d.body).appendChild(s);
+		})();
+		</script>
+		<noscript>Please enable JavaScript to view comments</noscript>	
+	</div>
+</body>
+</html>
