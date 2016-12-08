@@ -183,3 +183,7 @@ header {
     padding-top: 100px;
   }
 }
+
+#disqus_thread {
+  background-color: whitesmoke;
+}
