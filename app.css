@@ -1,0 +1,19 @@
+html,
+body {
+	font-family: Roboto;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background-color: #efefef;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+h1 {
+	margin: 0;
+}
